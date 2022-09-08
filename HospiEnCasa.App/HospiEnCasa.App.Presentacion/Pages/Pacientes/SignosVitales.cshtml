@@ -1,0 +1,61 @@
+﻿@page
+@model HospiEnCasa.App.Presentacion.Pages.SignosVitalesModel
+@{
+}
+
+<h2>Registro de Signos Vitales</h2>
+
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding: 30px; background-color:#D2F7F0;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="signoVital.FechaHora"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="signoVital.FechaHora" class="form-control">
+                    </div>
+                    <span asp-validation-for="signoVital.FechaHora" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="signoVital.Valor"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="signoVital.Valor" class="form-control">
+                    </div>
+                    <span asp-validation-for="signoVital.Valor" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="signoVital.Signo"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="signoVital.Signo" class="form-control">
+                    </div>
+                    <span asp-validation-for="signoVital.Signo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-2">
+                       <input type="submit" value="Crear" class="btn btn-primary form-control">
+                    </div>
+                    <div class="col-sm-2">
+                        <a asp-page="/Pacientes/SignosVitales" class="btn btn-success form-control">Adicionar otro Signo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

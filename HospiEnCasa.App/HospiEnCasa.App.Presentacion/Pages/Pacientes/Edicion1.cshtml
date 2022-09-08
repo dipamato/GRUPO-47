@@ -1,0 +1,57 @@
+﻿@page
+@model HospiEnCasa.App.Presentacion.Pages.Edicion1Model
+@{
+}
+<br>
+<h2 style="color: blue;">Consultar Datos Paciente</h2>
+<br>
+
+<div class="border">
+    <div class="container ">
+        <form method="post">
+            <div class="row">
+                <label for="">Numero de Telefono</label>
+                <input asp-for="paciente.NumeroTelefono">
+                <input type="submit" value="Consultar" class="btn btn-primary form-control">
+            </div>
+        </form>
+    </div>
+</div>
+
+<br>
+
+<div class="border">
+    <div class="container">
+        <form method="post" asp-page-handler="edit">
+
+            <input asp-for="paciente.Id" type="hidden">
+
+            <div class="input-group mb-3">
+                <input asp-for="paciente.Nombre" class="form-control" placeholder="Nombre">
+            </div>
+
+            <div class="input-group mb-3">
+                <input asp-for="paciente.Apellidos" class="form-control" placeholder="Apellidos">
+            </div>
+
+            <div class="input-group mb-3">
+                <input asp-for="paciente.NumeroTelefono" class="form-control" placeholder="Numero Telefono">
+            </div>
+
+            <div class="input-group mb-3">
+                <input asp-for="paciente.Genero" class="form-control" placeholder="Genero">
+                <select class="form-select form-select-sm" asp-for="paciente.Genero" >
+                    <option selected>Seleccione su Genero</option>
+                    <option value="1" asp-for="genero.Femenino">Femenino</option>
+                    <option value="2" asp-for="genero.Maculino">Masculino</option>
+                    <option value="3" asp-for="genero.Bisexual">Bisexual</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="submit" value="MOdificar" class="btn btn-success form-control">
+                <a  type="button" asp-page="/Pacientes/SignosVitales"class="btn btn-info form-control" asp-route-pacienteId=@Model.paciente.Id>Registrar Signos Vitales</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+﻿@page
+@model HospiEnCasa.App.Presentacion.Pages.EdicionModel
+@{
+}
+
+<h2 class="text-info">Edicion de  Pacientes</h2>
+
+<div class="border">
+    <form method="post">
+        <div class="container" style="padding: 40px;">
+            <input type="hidden" asp-for="paciente.Id">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="paciente.Nombre"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="paciente.Nombre" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="paciente.Apellidos"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="paciente.Apellidos" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="paciente.NumeroTelefono"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="paciente.NumeroTelefono" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="paciente.Genero"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="paciente.Genero" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-3" >
+                        <button type="submit">Guardar</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+<div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+</div>

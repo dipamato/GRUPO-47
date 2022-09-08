@@ -1,0 +1,30 @@
+﻿@page
+@model HospienCasa.App.Presentacion.Pages.ConsultaModel
+@{
+}
+
+<h1 style="text-align: center;">Lista de Pacientes</h1>
+
+<br>
+
+<table class="table">
+    <tr>
+        <td>Nombre</td>
+        <td>Apellidos</td>
+        <td>Telefono</td>
+        <td>Genero</td>
+        <td>Eliminar</td>
+    </tr>
+    @foreach (var x in Model.listaPacientes)
+    {
+        <tr>
+            <td>@x.Nombre</td>
+            <td>@x.Apellidos</td>
+            <td>@x.NumeroTelefono</td>
+            <td>@x.Genero</td>
+            <td><a class="btn btn-secondary" asp-page="/Pacientes/Consulta" asp-route-pacienteId="@x.Id">Eliminar</a>
+            </td>
+            <td><a class="btn btn-success" asp-page="/Pacientes/Edicion" asp-route-pacienteId="@x.Id">Editar</a></td>
+        </tr>
+    }
+</table>
