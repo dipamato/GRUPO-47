@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HospiEnCasa.App.Presentacion.Pages
 {
@@ -17,15 +18,16 @@ namespace HospiEnCasa.App.Presentacion.Pages
         public EdicionModel(IRepositorioPaciente repoPaciente)
         {
             _repoPaciente=repoPaciente;
-        }
+        } [Authorize]
         public void OnGet(int pacienteId)
         {
             paciente = _repoPaciente.GetPaciente(pacienteId);
 
         }
-
+       
         public async Task<IActionResult> OnPost()
         {
+            
             paciente= _repoPaciente.UpdatePaciente(paciente);
             if(paciente==null){
                 return RedirectToPage("./NotFound");

@@ -39,7 +39,7 @@ namespace HospiEnCasa.App.Persistencia
                 pacienteEncontrado.Apellidos = paciente.Apellidos;
                 pacienteEncontrado.NumeroTelefono = paciente.NumeroTelefono;
                 pacienteEncontrado.Genero = paciente.Genero;
-               /* pacienteEncontrado.Direccion = paciente.Direccion;
+                pacienteEncontrado.Direccion = paciente.Direccion;
                 pacienteEncontrado.Latitud = paciente.Latitud;
                 pacienteEncontrado.Longitud = paciente.Longitud;
                 pacienteEncontrado.Ciudad = paciente.Ciudad;
@@ -48,7 +48,7 @@ namespace HospiEnCasa.App.Persistencia
                 pacienteEncontrado.Enfermera = paciente.Enfermera;
                 pacienteEncontrado.Medico = paciente.Medico;
                 pacienteEncontrado.Historia = paciente.Historia;
-*/
+
                 _appContext.SaveChanges();
             }
             return pacienteEncontrado;

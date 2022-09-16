@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj": {}
+    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj": {}
   },
   "projects": {
-    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
+        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
         "projectName": "HospiEnCasa.App.Dominio",
-        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
+        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Diana Marin\\.nuget\\packages\\",
-        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\obj\\",
+        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diana Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
+    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
         "projectName": "HospiEnCasa.App.Persistencia",
-        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
+        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Diana Marin\\.nuget\\packages\\",
-        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\obj\\",
+        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diana Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -82,8 +82,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
+              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
               }
             }
           }
@@ -97,6 +97,10 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -141,14 +145,14 @@
         }
       }
     },
-    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj": {
+    "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj",
+        "projectUniqueName": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj",
         "projectName": "HospiEnCasa.App.Presentacion",
-        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj",
+        "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\hospiencasa.app.presentacion\\HospiEnCasa.App.Presentacion.csproj",
         "packagesPath": "C:\\Users\\Diana Marin\\.nuget\\packages\\",
-        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\hospiencasa.app.presentacion\\obj\\",
+        "outputPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\hospiencasa.app.presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diana Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -162,11 +166,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
+              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj"
               },
-              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
-                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj"
+              "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj": {
+                "projectPath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Persistencia\\HospiEnCasa.App.Persistencia.csproj"
               }
             }
           }
@@ -179,6 +183,34 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

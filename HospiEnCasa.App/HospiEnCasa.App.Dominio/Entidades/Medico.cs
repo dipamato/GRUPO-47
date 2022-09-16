@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 
 namespace HospiEnCasa.App.Dominio
 {
@@ -6,11 +7,13 @@ namespace HospiEnCasa.App.Dominio
     /// </summary>   
     public class Medico : Persona
     {
-        /// Nombre de la especialidad medica del Médico  
+        [Required]/// Nombre de la especialidad medica del Médico  
         public string Especialidad { get; set; }
+        [Required]
         /// Código único del médico
         public string Codigo { get; set; }
          /// Registro Unico Nacional del Talento Humano 
+         [Required]
         public string RegistroRethus { get; set; }
     }
 }

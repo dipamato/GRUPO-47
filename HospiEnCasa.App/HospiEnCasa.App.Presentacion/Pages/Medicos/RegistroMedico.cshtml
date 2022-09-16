@@ -1,0 +1,98 @@
+﻿@page
+@model HospiEnCasa.App.Pages.RegistroMedicoModel
+@{
+}
+<br>
+<h2 class="text-info"  style="text-align: center;">Registrar Medico</h2>
+
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding: 30px; background-color:#D2F7F0;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.Nombre"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.Nombre" class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.Nombre" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.Apellidos"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.Apellidos" class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.Apellidos" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.NumeroTelefono"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.NumeroTelefono" class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.NumeroTelefono" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.Especialidad"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.Especialidad"class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.Especialidad" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.Codigo"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.Codigo" class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.Codigo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="medico.RegistroRethus"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="medico.RegistroRethus" class="form-control">
+                    </div>
+                    <span asp-validation-for="medico.RegistroRethus" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-2">
+                       <input type="submit" value="Crear" class="btn btn-primary form-control">
+                    </div>
+                    <div class="col-sm-2">
+                        <a asp-page="/Index" class="btn btn-success form-control">Volver</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O7NGthmnVY9Yh+GseEerGgkSZS2+iXC1+7ZVQALHEqEukL3b5WpIJcIbeI2h1rbMcIiWLLBhaXUffpcaRL6t+Q==",
+  "dgSpecHash": "qCsbc8bkATpMtWAiVk4K0rBqJ+KOX1H+QPPrtZInBWacTjIZO72bWv5Xj0fiO8UypkbaMr6NX/lVR5km0NT7tw==",
   "success": true,
-  "projectFilePath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\hospiencasa.app\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
+  "projectFilePath": "D:\\MISION TIC 2022\\CICLO 3\\Grupo 47\\ProyectoFormacion\\HospiEnCasa.App\\HospiEnCasa.App.Dominio\\HospiEnCasa.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diana Marin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Diana Marin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

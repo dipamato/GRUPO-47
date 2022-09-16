@@ -1,4 +1,5 @@
 ﻿@page
+@using HospiEnCasa.App.Dominio
 @model HospiEnCasa.App.Presentacion.Pages.Edicion1Model
 @{
 }
@@ -39,19 +40,36 @@
             </div>
 
             <div class="input-group mb-3">
-                <input asp-for="paciente.Genero" class="form-control" placeholder="Genero">
-                <select class="form-select form-select-sm" asp-for="paciente.Genero" >
+               
+                <select  class="form-select form-control" asp-for="paciente.Genero" asp-items="@Html.GetEnumSelectList<Genero>()">
                     <option selected>Seleccione su Genero</option>
-                    <option value="1" asp-for="genero.Femenino">Femenino</option>
-                    <option value="2" asp-for="genero.Maculino">Masculino</option>
-                    <option value="3" asp-for="genero.Bisexual">Bisexual</option>
+                    
                 </select>
             </div>
 
             <div class="input-group mb-3">
-                <input type="submit" value="MOdificar" class="btn btn-success form-control">
+               
+                <select onchange="Mostrar()" id="nombre" class="form-select form-control" asp-for="Medico.Nombre" asp-items="Model.nombresMedico">
+                    <option selected>Seleccione su Medico</option>  
+                </select>
+                <input type="hidden" id="dato" name="nombres">
+            </div>
+
+            <div class="input-group mb-3">
+                
+                <input type="submit" value="Modificar" class="btn btn-success form-control">
                 <a  type="button" asp-page="/Pacientes/SignosVitales"class="btn btn-info form-control" asp-route-pacienteId=@Model.paciente.Id>Registrar Signos Vitales</a>
             </div>
         </form>
     </div>
 </div>
+
+<script type="text/javascript">
+function Mostrar (){
+    var dato=document.getElementById("nombre");
+    var seleccionada=dato.options[dato.selectedIndex].text;
+    document.getElementById("dato").value=seleccionada;
+    
+}
+
+</script>
